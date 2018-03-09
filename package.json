@@ -1,0 +1,52 @@
+{
+  "name": "ast_mongo_ts",
+  "version": "0.0.1",
+  "description": "The ast_mongo_ts is a nodejs library to handle asterisk objects with ast_mongo",
+  "author": "KINOSHITA minoru <5021543+minoruta@users.noreply.github.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/minoruta/ast_mongo_ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/minoruta/ast_mongo_ts.git"
+  },
+  "main": "./dist/src/ast_mongo.js",
+  "types": "./dist/src/ast_mongo.d.ts",
+  "scripts": {
+    "build": "npm run build-ts && npm run tslint",
+    "test": "jest --forceExit --maxWorkers 1",
+    "build-ts": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "docs": "node_modules/.bin/typedoc src && ./.remove_local.sh"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "dependencies": {
+    "mongoose": "^5.0.0",
+    "mongoose-integer": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/debug": "^0.0.30",
+    "@types/jest": "^21.1.10",
+    "@types/mongoose": "^4.7.32",
+    "@types/node": "^8.5.9",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.2.4",
+    "tslint": "^5.9.1",
+    "typedoc": "^0.9.0",
+    "typescript": "~2.6.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/test/**/*.test.ts"
+    ],
+    "testEnvironment": "node"
+  }
+}
