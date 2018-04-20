@@ -7,5 +7,5 @@ type String = Schema.Types.String;
 
 export const IdentifyDefinition = {
     endpoint: String,
-    match: [String],
+    match: String,
 };

@@ -208,11 +208,25 @@ describe('AstMongo.ts with Endpoint Set', () => {
             .populate('auth');
         expect(result).toMatchSnapshot();
     });
-    test ('add identify as realtime resources', async () => {
+    test ('add an identify as realtime resources', async () => {
         const results = await ast_mongo.Identify.create({
             endpoint: 'my_realtime_trunk',
-            match: [ '203.0.113.11', '203.0.113.12', '203.0.113.13' ]
+            match: '203.0.113.11'
         });
+        expect(deleteId(results)).toMatchSnapshot();
+        const identifies = await ast_mongo.Identify
+            .find({})
+            .select('-_id');
+        expect(identifies).toMatchSnapshot();
+    });
+    test ('add multiple identifis as realtime resources', async () => {
+        const results = await ast_mongo.Identify.create([{
+            endpoint: 'my_realtime_trunk',
+            match: '203.0.113.12',
+        }, {
+            endpoint: 'my_realtime_trunk',
+            match: '203.0.113.13'
+        }]);
         expect(deleteId(results)).toMatchSnapshot();
         const identifies = await ast_mongo.Identify
             .find({})

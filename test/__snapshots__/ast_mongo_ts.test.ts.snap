@@ -154,30 +154,57 @@ Array [
 ]
 `;
 
-exports[`AstMongo.ts with Endpoint Set add identify as realtime resources 1`] = `
+exports[`AstMongo.ts with Endpoint Set add an identify as realtime resources 1`] = `
 Array [
   Object {
     "__v": 0,
     "endpoint": "my_realtime_trunk",
-    "match": Array [
-      "203.0.113.11",
-      "203.0.113.12",
-      "203.0.113.13",
-    ],
+    "match": "203.0.113.11",
   },
 ]
 `;
 
-exports[`AstMongo.ts with Endpoint Set add identify as realtime resources 2`] = `
+exports[`AstMongo.ts with Endpoint Set add an identify as realtime resources 2`] = `
 Array [
   Object {
     "__v": 0,
     "endpoint": "my_realtime_trunk",
-    "match": Array [
-      "203.0.113.11",
-      "203.0.113.12",
-      "203.0.113.13",
-    ],
+    "match": "203.0.113.11",
+  },
+]
+`;
+
+exports[`AstMongo.ts with Endpoint Set add multiple identifis as realtime resources 1`] = `
+Array [
+  Object {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.12",
+  },
+  Object {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.13",
+  },
+]
+`;
+
+exports[`AstMongo.ts with Endpoint Set add multiple identifis as realtime resources 2`] = `
+Array [
+  Object {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.11",
+  },
+  Object {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.12",
+  },
+  Object {
+    "__v": 0,
+    "endpoint": "my_realtime_trunk",
+    "match": "203.0.113.13",
   },
 ]
 `;
