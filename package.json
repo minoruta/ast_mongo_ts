@@ -1,6 +1,6 @@
 {
   "name": "ast_mongo_ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The ast_mongo_ts is a nodejs library to handle asterisk objects with ast_mongo",
   "author": "KINOSHITA minoru <5021543+minoruta@users.noreply.github.com>",
   "license": "MIT",
