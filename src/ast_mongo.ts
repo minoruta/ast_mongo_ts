@@ -9,6 +9,7 @@ import {
     SchemaDefinition,
     Connection,
     createConnection,
+    ConnectionOptions,
     plugin
 } from 'mongoose';
 
@@ -41,13 +42,21 @@ import {
 import * as integerValidator from 'mongoose-integer';
 
 export {
+    CAstModel,
+    CAstModelOptions,
     AstProperties,
     AorProperties,
     AuthProperties,
     EndpointProperties,
     StaticProperties,
     CdrProperties,
-    CelProperties
+    CelProperties,
+    Model,
+    Document,
+    Schema,
+    SchemaDefinition,
+    Connection,
+    plugin
 };
 export * from './helpers/StaticModelHelper';
 export * from './helpers/EndpointSetHelper';
@@ -57,8 +66,16 @@ export interface AstMongoOptions {
         config?: string;
         cdr?: string;
         cel?: string;
+        [key: string]: string;
     };
     plugins?: { func: (schema: Schema, options?: object) => void, options: any }[];
+}
+
+export interface AstMongoConnections {
+    config?: Connection;
+    cdr?: Connection;
+    cel?: Connection;
+    [key: string]: Connection;
 }
 
 export interface AorDocument extends AorProperties, Document {}
@@ -83,11 +100,7 @@ export type CelModel = Model<CelDocument>;
 export class AstMongo {
 
     private _options: AstMongoOptions;
-    private _connections: {
-        config?: Connection;
-        cdr?: Connection;
-        cel?: Connection;
-    };
+    private _connections: AstMongoConnections;
     private _aor?: AorModel;
     private _auth?: AuthModel;
     private _endpoint?: EndpointModel;
@@ -95,6 +108,15 @@ export class AstMongo {
     private _static?: StaticModel;
     private _cdr?: CdrModel;
     private _cel?: CelModel;
+
+    static createConnection(uri: string, options?: ConnectionOptions):
+        Connection & {
+            then: Promise<Connection>["then"];
+            catch: Promise<Connection>["catch"];
+        } {
+            const opt = Object.assign(options || {}, { useNewUrlParser: true });
+            return createConnection(uri, opt);
+    }
 
     /**
      * @param options is specified for configuration of ast_mongo.
@@ -116,7 +138,7 @@ export class AstMongo {
 
         if (this._options.urls.config) {
             let options: CAstModelOptions = { plugins: this._options.plugins };
-            const connection = await createConnection(this._options.urls.config);
+            const connection = await AstMongo.createConnection(this._options.urls.config);
             this._aor = this.Model<AorDocument, AorModel, AorProperties>(connection, AorDefinition, 'Aor', options);
             this._auth = this.Model<AuthDocument, AuthModel, AuthProperties>(connection, AuthDefinition, 'Auth', options);
             this._endpoint = this.Model<EndpointDocument, EndpointModel, EndpointProperties>(connection, EndpointDefinition, 'Endpoint', options);
@@ -139,7 +161,7 @@ export class AstMongo {
                 plugins: this._options.plugins,
                 collectionName: 'cdr'
             };
-            const connection = await createConnection(this._options.urls.cdr);
+            const connection = await AstMongo.createConnection(this._options.urls.cdr);
             this._cdr = this.Model<CdrDocument, CdrModel, CdrProperties>(connection, CdrDefinition, 'Cdr', options);
             this._connections.cdr = connection;
         }
@@ -148,7 +170,7 @@ export class AstMongo {
                 plugins: this._options.plugins,
                 collectionName: 'cel'
             };
-            const connection = await createConnection(this._options.urls.cel);
+            const connection = await AstMongo.createConnection(this._options.urls.cel);
             this._cel = this.Model<CelDocument, CelModel, CelProperties>(connection, CelDefinition, 'Cel', options);
             this._connections.cel = connection;
         }
@@ -173,6 +195,13 @@ export class AstMongo {
         this._static = undefined;
         this._cdr = undefined;
         this._cel = undefined;
+    }
+
+    get options(): AstMongoOptions {
+        return this._options;
+    }
+    get connections(): AstMongoConnections {
+        return this._connections;
     }
 
     get Aor(): AorModel {
@@ -219,7 +248,7 @@ export class AstMongo {
      * @param name          is name of collection for the model.
      * @param options       is a set of options.
      */
-    private Model<T extends Document, U extends Model<T>, V extends AstProperties>(
+    protected Model<T extends Document, U extends Model<T>, V extends AstProperties>(
         connection: Connection,
         definition: SchemaDefinition,
         name: string,
