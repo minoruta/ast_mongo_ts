@@ -13,7 +13,6 @@
   "types": "./dist/src/ast_mongo.d.ts",
   "scripts": {
     "build": "npm run build-ts && npm run tslint",
-    "postinstall": "postinstall-build dist",
     "test": "jest --forceExit --maxWorkers 1",
     "build-ts": "tsc",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
@@ -24,8 +23,7 @@
   },
   "dependencies": {
     "mongoose": "^5.2.5",
-    "mongoose-integer": "^0.1.1",
-    "postinstall-build": "^5.0.1"
+    "mongoose-integer": "^0.1.1"
   },
   "devDependencies": {
     "@types/debug": "^0.0.30",

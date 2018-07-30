@@ -1,0 +1,23 @@
+export declare const CdrDefinition: {
+    clid: StringConstructor;
+    src: StringConstructor;
+    dst: StringConstructor;
+    dcontext: StringConstructor;
+    channel: StringConstructor;
+    dstchannel: StringConstructor;
+    lastapp: StringConstructor;
+    lastdata: StringConstructor;
+    disposition: StringConstructor;
+    amaflags: StringConstructor;
+    accountcode: StringConstructor;
+    uniqueid: StringConstructor;
+    userfield: StringConstructor;
+    peeraccount: StringConstructor;
+    linkedid: StringConstructor;
+    duration: NumberConstructor;
+    billsec: NumberConstructor;
+    sequence: NumberConstructor;
+    start: DateConstructor;
+    answer: DateConstructor;
+    end: DateConstructor;
+};

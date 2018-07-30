@@ -1,0 +1,22 @@
+export declare const CelDefinition: {
+    eventtype: NumberConstructor;
+    eventname: StringConstructor;
+    cid_name: StringConstructor;
+    cid_num: StringConstructor;
+    cid_ani: StringConstructor;
+    cid_rdnis: StringConstructor;
+    cid_dnid: StringConstructor;
+    exten: StringConstructor;
+    context: StringConstructor;
+    channame: StringConstructor;
+    appname: StringConstructor;
+    appdata: StringConstructor;
+    accountcode: StringConstructor;
+    peeraccount: StringConstructor;
+    uniqueid: StringConstructor;
+    linkedid: StringConstructor;
+    userfield: StringConstructor;
+    peer: StringConstructor;
+    extra: StringConstructor;
+    eventtime: DateConstructor;
+};
