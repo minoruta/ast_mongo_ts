@@ -41,6 +41,7 @@ import {
 
 import * as integerValidator from 'mongoose-integer';
 
+export * from "mongoose";
 export {
     CAstModel,
     CAstModelOptions,
@@ -51,12 +52,6 @@ export {
     StaticProperties,
     CdrProperties,
     CelProperties,
-    Model,
-    Document,
-    Schema,
-    SchemaDefinition,
-    Connection,
-    plugin
 };
 export * from './helpers/StaticModelHelper';
 export * from './helpers/EndpointSetHelper';
