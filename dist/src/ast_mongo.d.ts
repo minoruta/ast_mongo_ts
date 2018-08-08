@@ -1,8 +1,9 @@
 /// <reference types="mongoose" />
-import { Model, Document, Schema, SchemaDefinition, Connection, ConnectionOptions, plugin } from 'mongoose';
+import { Model, Document, Schema, SchemaDefinition, Connection, ConnectionOptions } from 'mongoose';
 import { AstProperties, AorProperties, AuthProperties, EndpointProperties, IdentifyProperties, StaticProperties, CdrProperties, CelProperties } from './properties';
 import { CAstModel, CAstModelOptions } from './models';
-export { CAstModel, CAstModelOptions, AstProperties, AorProperties, AuthProperties, EndpointProperties, StaticProperties, CdrProperties, CelProperties, Model, Document, Schema, SchemaDefinition, Connection, plugin };
+export * from "mongoose";
+export { CAstModel, CAstModelOptions, AstProperties, AorProperties, AuthProperties, EndpointProperties, StaticProperties, CdrProperties, CelProperties };
 export * from './helpers/StaticModelHelper';
 export * from './helpers/EndpointSetHelper';
 export interface AstMongoOptions {

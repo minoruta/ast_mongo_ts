@@ -8,14 +8,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 const mongoose = require("mongoose");
 const mongoose_1 = require("mongoose");
-exports.Model = mongoose_1.Model;
-exports.Schema = mongoose_1.Schema;
-exports.Connection = mongoose_1.Connection;
-exports.plugin = mongoose_1.plugin;
 const schemas_1 = require("./schemas");
 const models_1 = require("./models");
 exports.CAstModel = models_1.CAstModel;
 const integerValidator = require("mongoose-integer");
+__export(require("mongoose"));
 __export(require("./helpers/StaticModelHelper"));
 __export(require("./helpers/EndpointSetHelper"));
 /**
