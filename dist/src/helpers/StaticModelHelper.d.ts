@@ -42,6 +42,6 @@ export declare class StaticModelHelper {
      */
     create(staticConfigs: StaticConfigs[]): Promise<StaticProperties[]>;
     create(filename: string, category: string, configs: Configs[]): Promise<StaticProperties[]>;
-    private getFilter(sc);
-    private config2property(cat_metric, sc);
+    private getFilter;
+    private config2property;
 }

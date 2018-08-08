@@ -1,4 +1,3 @@
-/// <reference types="mongoose" />
 /**
  * Schema definition for Static Config
  */

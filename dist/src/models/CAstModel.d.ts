@@ -1,4 +1,3 @@
-/// <reference types="mongoose" />
 /**
  * A library to handle and manage asterisk objects with ast_mongo.
  */
