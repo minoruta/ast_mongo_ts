@@ -29,8 +29,8 @@
       "includes": "src",
       "excludeNotExported": true,
       "excludePrivate": true,
-      "excludeExternals": true,
-      "includeDeclarations": false,
+      "excludeExternals": false,
+      "includeDeclarations": true,
       "hideGenerator": false
   }
 }
