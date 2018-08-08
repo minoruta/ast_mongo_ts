@@ -38,6 +38,8 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -97,13 +99,17 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="astmongo.html#endpoint" class="tsd-kind-icon">Endpoint</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="astmongo.html#identify" class="tsd-kind-icon">Identify</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="astmongo.html#static" class="tsd-kind-icon">Static</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="astmongo.html#connections" class="tsd-kind-icon">connections</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="astmongo.html#options" class="tsd-kind-icon">options</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected"><a href="astmongo.html#model" class="tsd-kind-icon">Model</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="astmongo.html#connect" class="tsd-kind-icon">connect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="astmongo.html#disconnect" class="tsd-kind-icon">disconnect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="astmongo.html#createconnection" class="tsd-kind-icon">create<wbr>Connection</a></li>
 							</ul>
 						</section>
 					</div>
@@ -121,7 +127,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ast_mongo.ts:97</li>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L114">src/ast_mongo.ts:114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -154,7 +160,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ast_mongo.ts:178</li>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L202">src/ast_mongo.ts:202</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../index.html#aormodel" class="tsd-signature-type">AorModel</a></h4>
@@ -171,7 +177,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ast_mongo.ts:183</li>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L207">src/ast_mongo.ts:207</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../index.html#authmodel" class="tsd-signature-type">AuthModel</a></h4>
@@ -188,7 +194,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ast_mongo.ts:203</li>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L227">src/ast_mongo.ts:227</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../index.html#cdrmodel" class="tsd-signature-type">CdrModel</a></h4>
@@ -205,7 +211,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ast_mongo.ts:208</li>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L232">src/ast_mongo.ts:232</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../index.html#celmodel" class="tsd-signature-type">CelModel</a></h4>
@@ -222,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ast_mongo.ts:188</li>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L212">src/ast_mongo.ts:212</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../index.html#endpointmodel" class="tsd-signature-type">EndpointModel</a></h4>
@@ -239,7 +245,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ast_mongo.ts:193</li>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L217">src/ast_mongo.ts:217</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../index.html#identifymodel" class="tsd-signature-type">IdentifyModel</a></h4>
@@ -256,16 +262,111 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ast_mongo.ts:198</li>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L222">src/ast_mongo.ts:222</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../index.html#staticmodel" class="tsd-signature-type">StaticModel</a></h4>
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="connections" class="tsd-anchor"></a>
+					<h3>connections</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> connections<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/astmongoconnections.html" class="tsd-signature-type">AstMongoConnections</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L198">src/ast_mongo.ts:198</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/astmongoconnections.html" class="tsd-signature-type">AstMongoConnections</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="options" class="tsd-anchor"></a>
+					<h3>options</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/astmongooptions.html" class="tsd-signature-type">AstMongoOptions</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L195">src/ast_mongo.ts:195</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/astmongooptions.html" class="tsd-signature-type">AstMongoOptions</a></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected">
+					<a name="model" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> Model</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">Model&lt;T, U, V&gt;<span class="tsd-signature-symbol">(</span>connection<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span>, definition<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SchemaDefinition</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/castmodeloptions.html" class="tsd-signature-type">CAstModelOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L246">src/ast_mongo.ts:246</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a model for the specified schema.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Document</span></h4>
+								</li>
+								<li>
+									<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+								<li>
+									<h4>V<span class="tsd-signature-symbol">: </span><a href="../interfaces/astproperties.html" class="tsd-signature-type">AstProperties</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>connection: <span class="tsd-signature-type">Connection</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>is a connection of mongoose.</p>
+									</div>
+								</li>
+								<li>
+									<h5>definition: <span class="tsd-signature-type">SchemaDefinition</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>is a definition for schema.</p>
+									</div>
+								</li>
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>is name of collection for the model.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="../interfaces/castmodeloptions.html" class="tsd-signature-type">CAstModelOptions</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>is a set of options.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="connect" class="tsd-anchor"></a>
 					<h3>connect</h3>
@@ -276,7 +377,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ast_mongo.ts:111</li>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L128">src/ast_mongo.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -298,7 +399,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in ast_mongo.ts:160</li>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L177">src/ast_mongo.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -307,6 +408,35 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="createconnection" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> create<wbr>Connection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Connection<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ConnectionOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Connection</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/ast_mongo.ts#L107">src/ast_mongo.ts:107</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">ConnectionOptions</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Connection</span>
+								<span class="tsd-signature-symbol"> &amp; </span>
+								<span class="tsd-signature-type">object</span>
+							</h4>
 						</li>
 					</ul>
 				</section>
@@ -351,11 +481,23 @@
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="astmongo.html#static" class="tsd-kind-icon">Static</a>
 							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="astmongo.html#connections" class="tsd-kind-icon">connections</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="astmongo.html#options" class="tsd-kind-icon">options</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-protected">
+								<a href="astmongo.html#model" class="tsd-kind-icon">Model</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="astmongo.html#connect" class="tsd-kind-icon">connect</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="astmongo.html#disconnect" class="tsd-kind-icon">disconnect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="astmongo.html#createconnection" class="tsd-kind-icon">create<wbr>Connection</a>
 							</li>
 						</ul>
 					</li>

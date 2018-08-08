@@ -38,6 +38,8 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -85,8 +87,8 @@
 						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#___cat_metric" class="tsd-kind-icon">___cat_<wbr>metric</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#___v" class="tsd-kind-icon">___v</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#__cat_metric" class="tsd-kind-icon">__cat_<wbr>metric</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#__v" class="tsd-kind-icon">__v</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#base" class="tsd-kind-icon">base</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#basemodelname" class="tsd-kind-icon">base<wbr>Model<wbr>Name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#cat_metric" class="tsd-kind-icon">cat_<wbr>metric</a></li>
@@ -112,6 +114,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#increment" class="tsd-kind-icon">increment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#isdeleted" class="tsd-kind-icon">is<wbr>Deleted</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#listeners" class="tsd-kind-icon">listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-inherited"><a href="staticdocument.html#model" class="tsd-kind-icon">model</a></li>
@@ -132,13 +135,13 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="___cat_metric" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ___cat_<wbr>metric</h3>
-					<div class="tsd-signature tsd-kind-icon">___cat_<wbr>metric<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<a name="__cat_metric" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> __cat_<wbr>metric</h3>
+					<div class="tsd-signature tsd-kind-icon">__cat_<wbr>metric<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="staticproperties.html">StaticProperties</a>.<a href="staticproperties.html#___cat_metric">___cat_metric</a></p>
+						<p>Inherited from <a href="staticproperties.html">StaticProperties</a>.<a href="staticproperties.html#__cat_metric">__cat_metric</a></p>
 						<ul>
-							<li>Defined in properties/Static.ts:14</li>
+							<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/properties/Static.ts#L14">src/properties/Static.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -148,12 +151,13 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="___v" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> ___v</h3>
-					<div class="tsd-signature tsd-kind-icon">___v<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="__v" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> __v</h3>
+					<div class="tsd-signature tsd-kind-icon">__v<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from Document.__v</p>
 						<ul>
+							<li>Defined in node_modules/@types/mongoose/index.d.ts:2918</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -170,6 +174,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.base</p>
 						<ul>
+							<li>Defined in node_modules/@types/mongoose/index.d.ts:2938</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -181,10 +186,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="basemodelname" class="tsd-anchor"></a>
 					<h3>base<wbr>Model<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">base<wbr>Model<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">String</span></div>
+					<div class="tsd-signature tsd-kind-icon">base<wbr>Model<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.baseModelName</p>
 						<ul>
+							<li>Defined in node_modules/@types/mongoose/index.d.ts:2944</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -201,7 +207,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staticproperties.html">StaticProperties</a>.<a href="staticproperties.html#cat_metric">cat_metric</a></p>
 						<ul>
-							<li>Defined in properties/Static.ts:7</li>
+							<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/properties/Static.ts#L7">src/properties/Static.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +218,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staticproperties.html">StaticProperties</a>.<a href="staticproperties.html#category">category</a></p>
 						<ul>
-							<li>Defined in properties/Static.ts:11</li>
+							<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/properties/Static.ts#L11">src/properties/Static.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -223,6 +229,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.collection</p>
 						<ul>
+							<li>Defined in node_modules/@types/mongoose/index.d.ts:2947</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -238,7 +245,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staticproperties.html">StaticProperties</a>.<a href="staticproperties.html#commented">commented</a></p>
 						<ul>
-							<li>Defined in properties/Static.ts:9</li>
+							<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/properties/Static.ts#L9">src/properties/Static.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,6 +256,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.db</p>
 						<ul>
+							<li>Defined in node_modules/@types/mongoose/index.d.ts:2950</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -264,6 +272,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.discriminators</p>
 						<ul>
+							<li>Defined in node_modules/@types/mongoose/index.d.ts:2953</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -279,7 +288,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staticproperties.html">StaticProperties</a>.<a href="staticproperties.html#filename">filename</a></p>
 						<ul>
-							<li>Defined in properties/Static.ts:10</li>
+							<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/properties/Static.ts#L10">src/properties/Static.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -290,6 +299,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from MongooseDocumentOptionals.id</p>
 						<ul>
+							<li>Defined in node_modules/@types/mongoose/index.d.ts:1253</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -308,6 +318,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.modelName</p>
 						<ul>
+							<li>Defined in node_modules/@types/mongoose/index.d.ts:2956</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -323,6 +334,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ModelProperties.schema</p>
 						<ul>
+							<li>Defined in node_modules/@types/mongoose/index.d.ts:2959</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -338,7 +350,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staticproperties.html">StaticProperties</a>.<a href="staticproperties.html#var_metric">var_metric</a></p>
 						<ul>
-							<li>Defined in properties/Static.ts:8</li>
+							<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/properties/Static.ts#L8">src/properties/Static.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -349,7 +361,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staticproperties.html">StaticProperties</a>.<a href="staticproperties.html#var_name">var_name</a></p>
 						<ul>
-							<li>Defined in properties/Static.ts:12</li>
+							<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/properties/Static.ts#L12">src/properties/Static.ts:12</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -360,7 +372,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="staticproperties.html">StaticProperties</a>.<a href="staticproperties.html#var_val">var_val</a></p>
 						<ul>
-							<li>Defined in properties/Static.ts:13</li>
+							<li>Defined in <a href="https://github.com/minoruta/ast_mongo_ts/blob/e69de2e/src/properties/Static.ts#L13">src/properties/Static.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -378,6 +390,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.addListener</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:412</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -422,6 +435,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.emit</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:420</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -448,6 +462,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.eventNames</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:425</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -465,6 +480,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.getMaxListeners</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:418</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -482,6 +498,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.increment</p>
 								<ul>
+									<li>Defined in node_modules/@types/mongoose/index.d.ts:2885</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -490,6 +507,50 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+					<a name="isdeleted" class="tsd-anchor"></a>
+					<h3>is<wbr>Deleted</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Deleted<span class="tsd-signature-symbol">(</span>isDeleted<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Deleted<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Document.isDeleted</p>
+								<ul>
+									<li>Defined in node_modules/@types/mongoose/index.d.ts:2894</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Override whether mongoose thinks this doc is deleted or not</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>isDeleted: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Document.isDeleted</p>
+								<ul>
+									<li>Defined in node_modules/@types/mongoose/index.d.ts:2896</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>whether mongoose thinks this doc is deleted.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -504,6 +565,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:421</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -527,6 +589,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.listeners</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:419</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -550,6 +613,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.model</p>
 								<ul>
+									<li>Defined in node_modules/@types/mongoose/index.d.ts:2891</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -581,6 +645,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.on</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:413</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -625,6 +690,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.once</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:414</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -669,6 +735,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.prependListener</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:423</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -713,6 +780,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.prependOnceListener</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:424</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -757,6 +825,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.remove</p>
 								<ul>
+									<li>Defined in node_modules/@types/mongoose/index.d.ts:2902</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -809,6 +878,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.removeAllListeners</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:416</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -832,6 +902,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.removeListener</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:415</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -877,6 +948,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.save</p>
 								<ul>
+									<li>Defined in node_modules/@types/mongoose/index.d.ts:2911</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -900,7 +972,7 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, product<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span>, numAffected<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, product<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
@@ -911,9 +983,6 @@
 														</li>
 														<li>
 															<h5>product: <span class="tsd-signature-type">this</span></h5>
-														</li>
-														<li>
-															<h5>numAffected: <span class="tsd-signature-type">number</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -929,6 +998,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Document.save</p>
 								<ul>
+									<li>Defined in node_modules/@types/mongoose/index.d.ts:2912</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -938,7 +1008,7 @@
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, product<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span>, numAffected<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, product<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
@@ -949,9 +1019,6 @@
 														</li>
 														<li>
 															<h5>product: <span class="tsd-signature-type">this</span></h5>
-														</li>
-														<li>
-															<h5>numAffected: <span class="tsd-signature-type">number</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -976,6 +1043,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.setMaxListeners</p>
 								<ul>
+									<li>Defined in node_modules/@types/node/index.d.ts:417</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1006,10 +1074,10 @@
 						<a href="staticdocument.html" class="tsd-kind-icon">Static<wbr>Document</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="staticdocument.html#___cat_metric" class="tsd-kind-icon">___cat_<wbr>metric</a>
+								<a href="staticdocument.html#__cat_metric" class="tsd-kind-icon">__cat_<wbr>metric</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="staticdocument.html#___v" class="tsd-kind-icon">___v</a>
+								<a href="staticdocument.html#__v" class="tsd-kind-icon">__v</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="staticdocument.html#base" class="tsd-kind-icon">base</a>
@@ -1070,6 +1138,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="staticdocument.html#increment" class="tsd-kind-icon">increment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
+								<a href="staticdocument.html#isdeleted" class="tsd-kind-icon">is<wbr>Deleted</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-inherited">
 								<a href="staticdocument.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a>
