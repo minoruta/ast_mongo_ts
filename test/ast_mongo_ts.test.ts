@@ -1,4 +1,3 @@
-import {} from 'jest';
 import {
     AstMongo, AstMongoOptions, StaticProperties,
     StaticModelHelper, StaticModelHelperCB,
